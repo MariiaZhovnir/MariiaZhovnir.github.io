@@ -1,0 +1,85 @@
+* {
+        margin: 0;
+        padding: 0;
+}
+/*properties for the whole page*/
+.page {
+        width: 1024px;
+        height: 1024px;
+        margin: 0 auto;
+        background-color: #f7f4f4;
+        border: 1px solid #8f8f8f;
+}
+/*properties for the block fio*/
+.fio h2 {
+        padding-top: 50px;
+        color: #010101;
+        font: bold 36px/1 Arial, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+}
+/*properties for the block information*/
+.information {
+        margin: 0 auto;
+        padding: 10px 263px 30px;
+}
+/*properties for all that is included in the information block*/
+.photo {
+        display: block;
+        margin: 0px auto 20px;
+        border: 1px solid #8f8f8f;
+}
+
+.main p {
+        color: #1f1f1f;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+}
+
+h3 {
+        color: #1f1f1f;
+        font: bold 18px/1 "MyriadProBold", sans-serif;
+}
+
+.main,
+.reasons,
+.contacts {
+        padding: 20px 0;
+        border-bottom: 1px solid #c4c4c5;
+}
+
+.reasons,
+.contacts,
+.feedback {
+        font-family: "MyriadProBold", sans-serif;
+}
+
+.reasons{
+        font-size:14px;
+        line-height: 14px;
+}
+
+ul {
+        margin-top: 25px;
+        padding-left: 38px;
+        color: #3b3b3b;
+        line-height: 17px;
+}
+
+.contacts p,
+.feedback p {
+        margin-top: 25px;
+        padding-left: 38px;
+        color: #3a3a3a;
+        font-family: "MyriadProRegular", sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+}
+
+.number {
+        margin-bottom: 20px;
+}
+
+.feedback {
+        padding-top: 20px;
+}
