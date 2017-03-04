@@ -1,0 +1,158 @@
+/*properties of the wrapper*/
+.wrapper {
+        width: 960px;
+        height: 846px;
+        margin: 0 auto;
+        padding: 50px 45px 60px;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+/*properties of the top navigation menu*/
+.top_menu {
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+
+.links_top {
+        background-color: #525151;
+        height: 40px;
+        font: normal 14.667px/15px "OpenSansRegular", sans-serif;
+        text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.links_top li,
+.links_bottom li {
+        display: inline-block;
+}
+
+.links_top li a {
+        display: block;
+      	text-decoration: none;
+      	color: white;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        border-left: 1px solid #525151;
+        border-right: 1px solid #525151;
+}
+
+.links_top li:first-child a {
+        padding-left: 23px;
+        padding-right: 63px;
+
+}
+.links_top li:nth-child(2) a {
+        padding-left: 25px;
+        padding-right: 23px;
+
+}
+.links_top li:nth-child(3) a {
+        padding-left: 64px;
+        padding-right: 44px;
+}
+.links_top li:last-child a {
+        padding-left: 39px;
+        padding-right: 24px;
+}
+
+.links_top li a:hover {
+  background-color: #343434;
+  border-color: #838383;
+}
+
+/*properties for left_menu "sidebar"*/
+.sidebar {
+        width: 240px;
+        float: left;
+        border: 1px solid #c8c8c8;
+}
+
+.left_menu li {
+        font: normal 13.33px/14px "OpenSansRegular", sans-serif;
+        border-top: 1px solid #c8c8c8;
+}
+.left_menu li a {
+        display: block;
+        text-decoration: none;
+        color: #656363;
+        padding-top: 13px;
+        padding-bottom: 12px;
+        padding-left: 23px
+}
+.left_menu li a:hover {
+        background-color: #f9f9f9;
+        padding-left: 35px;
+        color: #2c2c2c;
+}
+.left_menu li:first-child {
+        border-top: 0;
+}
+
+.left_menu li:last-child {
+        border-bottom: 0;
+}
+/*properties for block which conteining information (image+text)*/
+.content {
+	float: right;
+}
+
+.content p {
+  font: normal 13.333px/20px "OpenSansRegular", sans-serif;
+	padding-top: 40px;
+	padding-left: 25px;
+  letter-spacing: .3px;
+}
+/*properties of "clearfix"*/
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+footer {
+        margin-top: 60px;
+        background-color: #e1e1e1;
+}
+/*properties for еру bottom-menu "links_bottom"*/
+.links_bottom {
+        background-color: #e1e1e1;
+        height: 40px;
+        font: normal 13.333px/14px "OpenSansRegular", sans-serif;
+        text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+}
+
+.links_bottom li a {
+        display: block;
+      	text-decoration: none;
+      	color: #2c2c2c;
+        padding-top: 13px;
+        padding-bottom: 13px;
+}
+
+.links_bottom li:first-child a {
+        padding-left: 25px;
+        padding-right: 70px;
+}
+.links_bottom li:nth-child(2) a {
+        padding-left: 25px;
+        padding-right: 31px;
+}
+.links_bottom li:nth-child(3) a {
+        padding-left: 64px;
+        padding-right: 50px;
+}
+.links_bottom li:last-child a {
+        padding-left: 45px;
+        padding-right: 28px;
+}
+
+.links_bottom li a:hover {
+        text-decoration: underline;
+}
+/*information about rightholders*/
+.rights {
+        float: right;
+        font: normal 13.333px/14px "OpenSansRegular", sans-serif;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-right: 25px;
+}

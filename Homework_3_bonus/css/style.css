@@ -1,0 +1,89 @@
+/*properties of the wrapper*/
+.wrapper {
+        width: 960px;
+        height: 883px;
+        margin: 0 auto;
+        background: url(../img/background.jpg);
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-position: inherit;
+}
+/*properties of all page which contains all of content*/
+.page {
+        padding: 57px 70px 30px;
+}
+/*properties for header (logo block + contacts block)*/
+header {
+        position: relative;
+}
+
+.logo {
+        width: 266px;
+        height: 147px;
+        background-image: url(../img/palm-tree.png);
+        background-position: right;
+        background-repeat: no-repeat;
+}
+
+.logo img {
+        padding: 75px 0 9px;
+}
+
+.logo p {
+        padding-bottom: 11px;
+        padding-left: 84px;
+        color: #e6e6e6;
+        font: normal 10.16px "Tahoma", sans-serif;
+}
+
+.contacts p{
+        padding-right: 17px;
+        padding-bottom: 11px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #e6e6e6;
+        font: normal 8.47px/1.2 "Tahoma", sans-serif;
+}
+
+.contacts p:first-line {
+        color: #e6e6e6;
+        font: normal 10.16px/1.8 "Tahoma", sans-serif;
+}
+/*properties for the block with countries photos*/
+.countries div {
+        display: inline-block;
+        float: left;
+}
+
+.countries p {
+        color: #e6e6e6;
+        font: normal 15.24px/1 "Tahoma", sans-serif;
+        text-align: center;
+}
+
+.india,
+.nepal,
+.bhutan,
+.sri-lanka {
+        margin-right: 5px;
+}
+
+.india,
+.nepal,
+.tibet {
+        margin-bottom: 50px;
+}
+/*properties of "clearfix"*/
+.clearfix:after {
+        content: '';
+        clear: both;
+        display: block;
+}
+/*properties for footer*/
+footer {
+        padding-top: 174px;
+        color: #e6e6e6;
+        font: normal 10.16px "Tahoma", sans-serif;
+        text-align: center;
+}
