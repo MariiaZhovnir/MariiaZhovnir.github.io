@@ -1,23 +1,17 @@
 /*properties of the wrapper*/
 .wrapper {
-        width: 960px;
-        height: 883px;
+        width: 820px;
+        height: 796px;
         margin: 0 auto;
+        padding: 57px 70px 30px;
         background: url(../img/background.jpg);
         background-color: #000;
         background-repeat: no-repeat;
-        background-position: inherit;
-}
-/*properties of all page which contains all of content*/
-.page {
-        padding: 57px 70px 30px;
+        background-position: center;
 }
 /*properties for header (logo block + contacts block)*/
-header {
-        position: relative;
-}
-
 .logo {
+        float:left;
         width: 266px;
         height: 147px;
         background-image: url(../img/palm-tree.png);
@@ -36,37 +30,40 @@ header {
         font: normal 10.16px "Tahoma", sans-serif;
 }
 
-.contacts p{
+.contacts {
+        float: right;
+        padding-top: 96px;
         padding-right: 17px;
-        padding-bottom: 11px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
         color: #e6e6e6;
         font: normal 8.47px/1.2 "Tahoma", sans-serif;
 }
 
-.contacts p:first-line {
+.contacts h4 {
         color: #e6e6e6;
-        font: normal 10.16px/1.8 "Tahoma", sans-serif;
-}
-/*properties for the block with countries photos*/
-.countries div {
-        display: inline-block;
-        float: left;
+        font: normal 10.16px/1 "Tahoma", sans-serif;
 }
 
-.countries p {
+.phone {
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 4px;
+}
+
+.countries div {
+        float: left;
+        width: 33%;
+        margin-right: .5%;
+}
+
+.countries div:nth-child(3n) {
+        margin-right: 0;
+}
+
+.country {
+        display: block;
         color: #e6e6e6;
         font: normal 15.24px/1 "Tahoma", sans-serif;
         text-align: center;
-}
-
-.india,
-.nepal,
-.bhutan,
-.sri-lanka {
-        margin-right: 5px;
 }
 
 .india,
