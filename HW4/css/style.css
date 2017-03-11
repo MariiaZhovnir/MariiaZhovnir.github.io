@@ -1,0 +1,231 @@
+body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../img/background.jpg");
+}
+
+/*свойства футера*/
+footer {
+        height: 30px;
+        padding-top: 10px;
+        color: #fff;
+        font: normal 12px/1 "Tahoma", sans-serif;
+}
+
+/*свойства обертки*/
+.wrapper {
+        width: 1000px;
+        margin-top: 38px;
+        background-color: #fff;
+}
+
+/*свойства хедера*/
+header {
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 33px 0 28px;
+        color: #128aa7;
+        font: normal 12px/1 "Tahoma", sans-serif;
+        line-height: 1.2;
+}
+
+.logo {
+        width: 284px;
+        height: 164px;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+}
+
+.logo p {
+        padding-top: 100px;
+        padding-left: 72px;
+}
+
+.container {
+        display: flex;
+        flex-direction: column;
+}
+
+span,
+a .country {
+        display: block;
+}
+
+.contacts__wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+        height: 67px;
+}
+
+h4 {
+        padding-bottom: 6px;
+        font-weight: bold;
+}
+
+.phone {
+        padding-bottom: 4px;
+}
+
+.countries {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 327px;
+        padding-top: 33px;
+        font: normal 10px/1 "Tahoma", sans-serif;
+}
+
+.countries a {
+        color: #128aa7;
+}
+.countries div {
+        width: 53px;
+        text-align: center;
+}/*тут хедер заканчивается*/
+
+/*свайства картинки*/
+.photo {
+        height: 238px;
+}
+
+.photo img {
+        border-top: 1px solid #128aa7;
+        border-bottom: 1px solid #128aa7;
+}
+
+/*свойства выпадающего менюменю*/
+.top-menu {
+        font: normal 14px/1 "Tahoma", sans-serif;
+        border-bottom: 1px solid #000;
+}
+
+ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #333;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+        list-style: none;
+}
+
+ul:after {
+        display: block;
+        content: ' ';
+        clear: both;
+        float: none;
+}
+
+ul.menu > li {
+        float: left;
+        position: relative;
+}
+
+ul.menu > li > a {
+        display: block;
+        padding: 8px 51px 10px 10px;
+        color: white;
+        text-decoration: none;
+}
+
+ul.menu > li:first-child > a {
+        padding-left: 65px;
+}
+
+ul.menu > li:last-child > a {
+        padding-right: 65px;
+}
+
+ul.submenu {
+        display: none;
+        position: absolute;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+ul.submenu > li {
+        display: block;
+}
+
+ul.submenu > li > a {
+        display: block;
+        padding: 10px;
+        color: white;
+        background-color: #303030;
+        text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+        text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+        display: block;
+}
+
+.menu span {
+        display: inline;
+        font-size: 10px;
+}
+
+/*свойства для контента колонок*/
+.content {
+        color: #424c43;
+        font: normal 14px/24px "Tahoma", sans-serif;
+}
+
+h1 {
+        font: bold 18px/24px "Tahoma", sans-serif;
+        text-align: center;
+}
+
+.content p {
+        padding-left: 16px;
+}
+
+/*три колонки с помощью обертывающих блоков*/
+.fon1 {  /* фон для левой колонки*/
+        float:left;
+        width:100%;
+        background:#edeef0;
+        position: relative;
+        right: 60%;
+}
+
+.fon2 {/* фон для центральной колонки */
+        float:left;
+        width:100%;
+        background:#fff;
+        position: relative;
+        right: 20%;
+}
+
+.fon3 {/* фон для правой колонки*/
+        float:left;
+        width:100%;
+        background:#edeef0;
+        overflow: hidden;
+        position: relative;
+}
+
+.left__column {
+        float:left;
+        width:20%;
+        position: relative;
+        left: 80%;
+}
+
+.center__column {
+        float:left;
+        width:60%;
+        position: relative;
+        left: 80%;
+}
+
+.right__column {
+        float:left;
+        width:20%;
+        position: relative;
+        left: 80%;
+}
