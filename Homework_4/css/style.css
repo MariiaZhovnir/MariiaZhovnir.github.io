@@ -2,13 +2,19 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url("../img/background.jpg");
+        padding-top: 34px;
+        /*background-image: url("../img/background.jpg");*/
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1297b8+0,1297b8+3,1396b4+3,1196b5+3,1299b9+3,0f95b8+3,1297ba+3,1495b5+3,0e89a8+4,138ca7+4,138aa8+6,138ba4+6,118aa7+6,5defff+6,17ccdf+6,0cd0e0+6,13cce0+7,18cde2+7,12d0e0+7,16cfe3+7,1bd0e1+7,1fd0e4+8,21d0e3+8,36d6e6+9,46d8e7+10,4edae9+10,57dbe8+11,63dfeb+11,74e3ee+12,8ee6f0+13,92e9f3+14,a2ebf2+14,cbf4f8+16,e1f9fd+18,e7f9fb+18,ebfaff+18,f1fdfd+19,fafeff+20,fffdff+20,fdfcff+20,f9fffb+20,fffff8+20,fffcff+20,46c5ce+20,39c6d8+20,43c5d2+20,3abdcf+23,1c9eb8+30,1c9dba+30,199ab7+31,1798b7+32,1192b1+34,0f8aac+55,1086aa+61,0e84a8+62,0e84aa+64,0e82a7+65,0f80a8+71,0d7da5+74,0e7ea6+76,0c79a2+83,0e79a3+85,0b76a0+88,0c739e+100 */
+        background: rgb(18,151,184); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(18,151,184,1) 0%, rgba(18,151,184,1) 3%, rgba(19,150,180,1) 3%, rgba(17,150,181,1) 3%, rgba(18,153,185,1) 3%, rgba(15,149,184,1) 3%, rgba(18,151,186,1) 3%, rgba(20,149,181,1) 3%, rgba(14,137,168,1) 4%, rgba(19,140,167,1) 4%, rgba(19,138,168,1) 6%, rgba(19,139,164,1) 6%, rgba(17,138,167,1) 6%, rgba(93,239,255,1) 6%, rgba(23,204,223,1) 6%, rgba(12,208,224,1) 6%, rgba(19,204,224,1) 7%, rgba(24,205,226,1) 7%, rgba(18,208,224,1) 7%, rgba(22,207,227,1) 7%, rgba(27,208,225,1) 7%, rgba(31,208,228,1) 8%, rgba(33,208,227,1) 8%, rgba(54,214,230,1) 9%, rgba(70,216,231,1) 10%, rgba(78,218,233,1) 10%, rgba(87,219,232,1) 11%, rgba(99,223,235,1) 11%, rgba(116,227,238,1) 12%, rgba(142,230,240,1) 13%, rgba(146,233,243,1) 14%, rgba(162,235,242,1) 14%, rgba(203,244,248,1) 16%, rgba(225,249,253,1) 18%, rgba(231,249,251,1) 18%, rgba(235,250,255,1) 18%, rgba(241,253,253,1) 19%, rgba(250,254,255,1) 20%, rgba(255,253,255,1) 20%, rgba(253,252,255,1) 20%, rgba(249,255,251,1) 20%, rgba(255,255,248,1) 20%, rgba(255,252,255,1) 20%, rgba(70,197,206,1) 20%, rgba(57,198,216,1) 20%, rgba(67,197,210,1) 20%, rgba(58,189,207,1) 23%, rgba(28,158,184,1) 30%, rgba(28,157,186,1) 30%, rgba(25,154,183,1) 31%, rgba(23,152,183,1) 32%, rgba(17,146,177,1) 34%, rgba(15,138,172,1) 55%, rgba(16,134,170,1) 61%, rgba(14,132,168,1) 62%, rgba(14,132,170,1) 64%, rgba(14,130,167,1) 65%, rgba(15,128,168,1) 71%, rgba(13,125,165,1) 74%, rgba(14,126,166,1) 76%, rgba(12,121,162,1) 83%, rgba(14,121,163,1) 85%, rgba(11,118,160,1) 88%, rgba(12,115,158,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(18,151,184,1) 0%,rgba(18,151,184,1) 3%,rgba(19,150,180,1) 3%,rgba(17,150,181,1) 3%,rgba(18,153,185,1) 3%,rgba(15,149,184,1) 3%,rgba(18,151,186,1) 3%,rgba(20,149,181,1) 3%,rgba(14,137,168,1) 4%,rgba(19,140,167,1) 4%,rgba(19,138,168,1) 6%,rgba(19,139,164,1) 6%,rgba(17,138,167,1) 6%,rgba(93,239,255,1) 6%,rgba(23,204,223,1) 6%,rgba(12,208,224,1) 6%,rgba(19,204,224,1) 7%,rgba(24,205,226,1) 7%,rgba(18,208,224,1) 7%,rgba(22,207,227,1) 7%,rgba(27,208,225,1) 7%,rgba(31,208,228,1) 8%,rgba(33,208,227,1) 8%,rgba(54,214,230,1) 9%,rgba(70,216,231,1) 10%,rgba(78,218,233,1) 10%,rgba(87,219,232,1) 11%,rgba(99,223,235,1) 11%,rgba(116,227,238,1) 12%,rgba(142,230,240,1) 13%,rgba(146,233,243,1) 14%,rgba(162,235,242,1) 14%,rgba(203,244,248,1) 16%,rgba(225,249,253,1) 18%,rgba(231,249,251,1) 18%,rgba(235,250,255,1) 18%,rgba(241,253,253,1) 19%,rgba(250,254,255,1) 20%,rgba(255,253,255,1) 20%,rgba(253,252,255,1) 20%,rgba(249,255,251,1) 20%,rgba(255,255,248,1) 20%,rgba(255,252,255,1) 20%,rgba(70,197,206,1) 20%,rgba(57,198,216,1) 20%,rgba(67,197,210,1) 20%,rgba(58,189,207,1) 23%,rgba(28,158,184,1) 30%,rgba(28,157,186,1) 30%,rgba(25,154,183,1) 31%,rgba(23,152,183,1) 32%,rgba(17,146,177,1) 34%,rgba(15,138,172,1) 55%,rgba(16,134,170,1) 61%,rgba(14,132,168,1) 62%,rgba(14,132,170,1) 64%,rgba(14,130,167,1) 65%,rgba(15,128,168,1) 71%,rgba(13,125,165,1) 74%,rgba(14,126,166,1) 76%,rgba(12,121,162,1) 83%,rgba(14,121,163,1) 85%,rgba(11,118,160,1) 88%,rgba(12,115,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(18,151,184,1) 0%,rgba(18,151,184,1) 3%,rgba(19,150,180,1) 3%,rgba(17,150,181,1) 3%,rgba(18,153,185,1) 3%,rgba(15,149,184,1) 3%,rgba(18,151,186,1) 3%,rgba(20,149,181,1) 3%,rgba(14,137,168,1) 4%,rgba(19,140,167,1) 4%,rgba(19,138,168,1) 6%,rgba(19,139,164,1) 6%,rgba(17,138,167,1) 6%,rgba(93,239,255,1) 6%,rgba(23,204,223,1) 6%,rgba(12,208,224,1) 6%,rgba(19,204,224,1) 7%,rgba(24,205,226,1) 7%,rgba(18,208,224,1) 7%,rgba(22,207,227,1) 7%,rgba(27,208,225,1) 7%,rgba(31,208,228,1) 8%,rgba(33,208,227,1) 8%,rgba(54,214,230,1) 9%,rgba(70,216,231,1) 10%,rgba(78,218,233,1) 10%,rgba(87,219,232,1) 11%,rgba(99,223,235,1) 11%,rgba(116,227,238,1) 12%,rgba(142,230,240,1) 13%,rgba(146,233,243,1) 14%,rgba(162,235,242,1) 14%,rgba(203,244,248,1) 16%,rgba(225,249,253,1) 18%,rgba(231,249,251,1) 18%,rgba(235,250,255,1) 18%,rgba(241,253,253,1) 19%,rgba(250,254,255,1) 20%,rgba(255,253,255,1) 20%,rgba(253,252,255,1) 20%,rgba(249,255,251,1) 20%,rgba(255,255,248,1) 20%,rgba(255,252,255,1) 20%,rgba(70,197,206,1) 20%,rgba(57,198,216,1) 20%,rgba(67,197,210,1) 20%,rgba(58,189,207,1) 23%,rgba(28,158,184,1) 30%,rgba(28,157,186,1) 30%,rgba(25,154,183,1) 31%,rgba(23,152,183,1) 32%,rgba(17,146,177,1) 34%,rgba(15,138,172,1) 55%,rgba(16,134,170,1) 61%,rgba(14,132,168,1) 62%,rgba(14,132,170,1) 64%,rgba(14,130,167,1) 65%,rgba(15,128,168,1) 71%,rgba(13,125,165,1) 74%,rgba(14,126,166,1) 76%,rgba(12,121,162,1) 83%,rgba(14,121,163,1) 85%,rgba(11,118,160,1) 88%,rgba(12,115,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1297b8', endColorstr='#0c739e',GradientType=0 ); /* IE6-9 */
 }
 
 /*properties of the wrapper*/
 .wrapper {
         width: 1000px;
-        margin-top: 38px;
         background-color: #fff;
         box-shadow: 1px 4px 10px 1px rgba(0,0,0,0.5);
 }
@@ -28,11 +34,19 @@ header {
         height: 164px;
         background-image: url(../img/logo.png);
         background-repeat: no-repeat;
+        position: relative;
+}
+
+.logo-link {
+        text-decoration: none;
+        color: #128aa7;
+        font: normal 12px/1 "Tahoma", sans-serif;
 }
 
 .logo p {
-        padding-top: 100px;
-        padding-left: 72px;
+        position: absolute;
+        top: 100px;
+        left: 72px;
 }
 
 .container {
@@ -47,7 +61,7 @@ a .country {
 
 .contacts__wrapper {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         align-items: flex-end;
         height: 67px;
 }
@@ -65,7 +79,6 @@ h4 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 327px;
         padding-top: 33px;
         font: normal 10px/1 "Tahoma", sans-serif;
 }
@@ -89,145 +102,95 @@ h4 {
 }
 
 /*properties of the top navigation menu*/
-.top-menu {
-        width: 1000px;
-        position: absolute;
-        font: normal 14px/1 "Tahoma", sans-serif;
-        border-bottom: 1px solid #000;
-        z-index: 2;        
-}
-
-ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background: #333;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+.list {
         list-style: none;
 }
-
-ul:after {
-        display: block;
-        content: ' ';
-        clear: both;
-        float: none;
+.top-menu {
+        width: 1000px;
+        background: #353535;
+        border-bottom: 1px solid #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+        font: normal 14px/1 "Tahoma", sans-serif;
 }
-
-ul.menu > li {
-        float: left;
+.menu {
+        display: flex;
+        justify-content: space-around;
+}
+.menu__item {
         position: relative;
+        width: 14%;
 }
-
-ul.menu > li > a {
+.menu__link {
         display: block;
-        padding: 8px 51px 10px 10px;
-        color: white;
+        color: #fff;
+        line-height: 30px;
         text-decoration: none;
+        text-align: center;
 }
 
-ul.menu > li:first-child > a {
-        padding-left: 65px;
+.menu__item:hover > .submenu {
+        display: block;
 }
-
-ul.menu > li:last-child > a {
-        padding-right: 65px;
-}
-
-ul.submenu {
+.submenu {
         display: none;
         position: absolute;
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        top: 100%;
+        min-width: 100%;
+        padding-bottom: 5px;
+        z-index: 3;
+        background: #353535;
+        border-top: 1px solid #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
 }
-
-ul.submenu > li {
-        display: block;
+.submenu__link {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
 }
-
-ul.submenu > li > a {
-        display: block;
-        padding: 10px;
-        color: white;
-        background-color: #303030;
-        text-decoration: none;
-}
-
-ul.submenu > li > a:hover {
+.submenu__link:hover {
         text-decoration: underline;
 }
-
-ul.menu > li:hover > ul.submenu {
-        display: block;
-}
-
 .menu span {
         display: inline;
         font-size: 10px;
 }
 
 /*Properties for column content*/
-.content {
+.columns {
+        display: flex;
+        width: 100%;
+        font: normal 14px/24px "Tahoma", sans-serif;
         color: #424c43;
-        font: normal 14px/23px "Tahoma", sans-serif;
 }
 
 h1 {
-        font: bold 18px/23px "Tahoma", sans-serif;
+        font: bold 18px/24px "Tahoma", sans-serif;
         text-align: center;
 }
-
-.content p {
-        padding-left: 16px;
-}
-
-/*Three columns with the help of wrapping blocks*/
-/*Background for the left column*/
-.fon1 {
-        float:left;
-        width:100%;
-        background:#edeef0;
-        position: relative;
-        right: 60%;
-}
-/*Background for center column*/
-.fon2 {
-        float:left;
-        width:100%;
-        background:#fff;
-        position: relative;
-        right: 20%;
-}
-/*Background for the right column*/
-.fon3 {
-        float:left;
-        width:100%;
-        background:#edeef0;
-        overflow: hidden;
-        position: relative;
-        padding-top: 37px;
-}
-
 .left__column {
-        float:left;
-        width:20%;
-        position: relative;
-        left: 80%;
+        width: 20%;
+        background: #edeef0;
+        border-left: 1px solid #c7cacf;
+        border-right: 1px solid #c7cacf;
 }
 
 .center__column {
-        float:left;
-        width:60%;
-        position: relative;
-        left: 80%;
-        color: white;
+        width: 59%;
+        background: #fff;
 }
 
 .right__column {
-        float:left;
-        width:20%;
-        position: relative;
-        left: 80%;
-        padding-bottom: 15px;
+        width: 20%;
+        background: #edeef0;
+        border-left: 1px solid #c7cacf;
+        border-right: 1px solid #c7cacf;
+}
+
+.left__column,
+.center__column,
+.right__column {
+        padding: 10px 24px 13px 15px;
 }
 
 /*footer properties*/
