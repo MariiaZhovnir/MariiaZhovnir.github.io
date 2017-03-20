@@ -1,5 +1,13 @@
+body {
+        background-image: url(../img/background.jpg);
+        background-size: cover;
+        background-color: #c9dfea;
+}
 .wrapper {
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
 }
 
 header {
@@ -78,8 +86,8 @@ i {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/background.jpg);
-        background-size: cover;
+        flex-grow: 1;
+        padding: 210px;
 }
 
 .top-part {
