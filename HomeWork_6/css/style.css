@@ -1,0 +1,237 @@
+.wrapper {
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  position: relative;
+  overflow: hidden;
+  width: 275px;
+  display: flex;
+  flex-direction: row;
+  font: normal 18px/1 Arial, sans-serif;
+  color: #5e696d;
+}
+.phone {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../img/sprite.png) -44px 0 no-repeat;
+}
+
+.top-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 496px;
+  height: 27px;
+  background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+  box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+  border-radius: 3px;
+}
+
+
+input[type="text"] {
+  width: 113px;
+  height: 16px;
+  color: #97a2a6;
+  font: normal 10.91px/1 "Lucida Sans", sans-serif;
+  border: 1px solid #9fb7c5;
+}
+
+input[type="submit"] {
+  width: 40px;
+  height: 18px;
+  padding: 0;
+  color: #fff;
+  font: normal 10.91px/1 "Lucida Sans", sans-serif;
+  border: none;
+  border-right: 1px solid #fff;
+  background: none;
+  cursor: pointer;
+}
+.registration,
+.forgot-password {
+  color: #fff;
+  font: normal 10.91px/1 "Lucida Sans", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.forgot-password {
+  color: #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+
+.navlist {
+  /*position: relative;
+  overflow: hidden;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 21px;
+  border: 1px solid #000;
+  border-color: rgb(189, 196, 199);
+  border-radius: 11px;
+  background-image: url("тень.png");
+
+}
+.navlist li {
+  float: left;
+  list-style: none;
+}
+
+.navlist a {
+  display: block;
+  width: 13px;
+  height: 11px;
+  background: url(../img/sprite.png) 1px -42px no-repeat;
+}
+.navlist .map {
+  background-position: -12px -42px;
+}
+.navlist .mail {
+  background-position: -26px -42px;
+}
+
+header > img {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 909px;
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  border-color: rgb(13, 22, 66);
+}
+.navigation {
+  font: normal 13.64px/1 "Lucida Sans", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 510px;
+  height: 33px;
+}
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: #b1bcc0;
+}
+.basket {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font: normal 12px/1 Arial, sans-serif;
+  width: 215px;
+  height: 33px;
+}
+.basket-img {
+  display: block;
+  width: 21px;
+  height: 17px;
+  background: url(../img/sprite.png) 0px -25px no-repeat;
+}
+.blue {
+  color: #0d5a8f;
+}
+.gray {
+  color: #929b9f;
+}
+.basket span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+select {
+                 background: transparent;
+                 width: 150px;
+                 height: 15px;
+                 border: 0;
+}
+.container {
+                border: 1px solid #00f;
+                overflow: hidden;
+                height: 15px;
+                background: url(../img/strelka.png) no-repeat right #c0c3ff;
+                width: 135px;
+                margin-top: 20px;
+}
+
+
+
+
+.columns {
+  display: flex;
+  width: 909px;
+  font: normal 12.73px/13px "Lucida Sans", sans-serif;
+  color: #465961;
+}
+h1 {
+  font: bold 14.59px/15px "Lucida Sans", sans-serif;
+  color: #206988;
+  text-align: center;
+}
+.tires__about {
+  font: normal 12.77px/13px "Lucida Sans", sans-serif;
+  color: #1f2528;
+  text-align: center;
+}
+
+
+.left__column {
+  width: 192px;
+}
+.center__column {
+  width: 527px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+.tires {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.price {
+  font: italic bold 16px/1 Arial, sans-serif;
+  color: #114165;
+  text-align: center;
+  margin-top: 5px;
+}
+/*.center__column .price {
+
+  font-style: italic;
+}*/
+.right__column {
+  width: 190px;
+}
