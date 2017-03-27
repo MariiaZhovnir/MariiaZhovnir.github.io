@@ -16,14 +16,14 @@
           <span>(044)567-89-10</span>
         </div>
         <div class="top-center">
-          <form class="" action="index.html" method="post">
-            <a class="man"></a>
-              <input type="text" name="name" value="логин">
-              <input type="text" name="name" value="пароль">
-              <input type="submit" name="submit" value="вход"></input>
+          <a class="man"></a>
+          <form class="enter" action="index.html" method="post">
+              <input type="text" name="name" placeholder="логин">
+              <input type="text" name="name" placeholder="пароль">
+              <input type="submit" name="submit" value="вход">
           </form>
           <a class="registration" href="#">регистрация</a>
-          <a class="forgot-password" href="#">забыли пороль?</a>
+          <a class="forgot-password" href="#">забыли пaроль?</a>
         </div>
         <div class="top-right">
           <ul class="navlist">
@@ -38,94 +38,231 @@
     <div class="main-menu">
       <nav class="navigation">
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">О КОМПАНИИ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">ОПЛАТА</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">ДОСТАВКА</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">СТАТЬИ</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">КОНТАКТЫ</a></li>
+          <li class="menu__item"><a class="menu__link link1" href="#">О КОМПАНИ</a></li>
+          <li class="menu__item"><a class="menu__link link2" href="#">ОПЛАТА</a></li>
+          <li class="menu__item"><a class="menu__link link3" href="#">ДОСТАВКА</a></li>
+          <li class="menu__item"><a class="menu__link link4" href="#">СТАТЬИ</a></li>
+          <li class="menu__item"><a class="menu__link link5" href="#">КОНТАКТЫ</a></li>
         </ul>
       </nav>
       <div class="basket">
         <a class="basket-img" title="корзина" href="#"></a>
         <span class="gray">товаров:</span>
         <span class="blue">0</span>
-        <span class="gray">на сумму:</span>
-        <span class="blue">0 грн.</span>
+        <span class="gray gray__price">на сумму:</span>
+        <span class="blue blue__price">0,00 грн.</span>
       </div>
     </div>
-
-
-
-    <div class="container">
-          <select>
-            <option value="option 1"></option>
-            <option value="option 2">option 2</option>
-            <option value="option 3">option 1</option>
-          </select>
-    </div>
-
-
+    <!--<div class="form-container">
+      <div class="form-header">
+        <h2 class="h2-right">Диски:</h2>
+        <h1>Поиск по автомобилю</h1>
+        <h2 class="h2-left">Шины:</h2>
+      </div>
+      <div class="form-wrapper">
+      <div class="description">
+        <span>Марка авто:</span>
+        <span class="description__2d-line">Модель автомобиля:</span>
+        <span>Год выпуска автомобиля:</span>
+        <span>Комплектация:</span>
+      </div>
+      <div class="list1">
+        <select class="select1">
+        <option value="option 1"></option>
+        </select>
+        <select class="select2">
+        <option value="option 1"></option>
+        </select>
+        <select class="select3">
+        <option value="option 1"></option>
+        </select>
+        <select class="select4">
+        <option value="option 1"></option>
+        </select>
+      </div>
+      </div>
+    </div>-->
 
     <div class="columns">
-      <div class="left__column"></div>
+      <div class="left__column">
+        <div class="catalog">
+          <a href="#" class="catalog__img"></a>
+          <a href="#" class="catalog__name">КАТАЛОГ ПРОДУКЦИИ:</a>
+        </div>
+<!--ШИНЫ-->
+          <div class="tire-radio">
+            <a class="tire-radio__img" href="#"></a>
+            <a href="#" class="tire-radio__name">ШИНЫ</a>
+          </div>
+          <div class="radio radio1">
+            <input type="radio" id="tire1__radio" name="tires" value="Наименование 1">
+              <label for="tire1__radio">Наименование 1</label>
+          </div>
+          <div class="radio radio2">
+            <input type="radio" id="tire2__radio" name="tires" value="Наименование 2">
+              <label for="tire2__radio">Наименование 2</label>
+          </div>
+          <div class="radio radio3">
+            <input type="radio" id="tire3__radio" name="tires" value="Наименование 3">
+              <label for="tire3__radio">Наименование 3</label>
+          </div>
+          <div class="radio radio4 radio-bottom">
+            <input type="radio" id="tire4__radio" name="tires" value="Наименование 4">
+              <label for="tire4__radio">Наименование 4</label>
+          </div>
+          <div class="disk-radio">
+            <a class="disk-radio__img" href="#"></a>
+            <a href="#" class="disk-radio__name">ДИСКИ</a>
+          </div>
+          <div class="radio radio5">
+            <input type="radio" id="disk1__radio" name="disks" value="Наименование 1">
+              <label for="disk1__radio">Наименование 1</label>
+          </div>
+          <div class="radio radio6">
+            <input type="radio" id="disk2__radio" name="disks" value="Наименование 2">
+              <label for="disk2__radio">Наименование 2</label>
+          </div>
+          <div class="radio radio7">
+            <input type="radio" id="disk3__radio" name="disks" value="Наименование 3">
+              <label for="disk3__radio">Наименование 3</label>
+          </div>
+          <div class="radio radio8 radio-bottom">
+            <input type="radio" id="disk4__radio" name="disks" value="Наименование 4">
+              <label for="disk4__radio">Наименование 4</label>
+          </div>
+          <div class="bolt-radio">
+            <a class="bolt-radio__img" href="#"></a>
+            <a href="#" class="bolt-radio__name">БОЛТЫ</a>
+          </div>
+          <div class="radio radio9">
+            <input type="radio" id="bolt1__radio" name="bolts" value="Наименование 1">
+              <label for="bolt1__radio">Наименование 1</label>
+          </div>
+          <div class="radio radio10">
+            <input type="radio" id="bolt2__radio" name="bolts" value="Наименование 2">
+              <label for="bolt2__radio">Наименование 2</label>
+          </div>
+          <div class="radio radio11">
+            <input type="radio" id="bolt3__radio" name="bolts" value="Наименование 3">
+              <label for="bolt3__radio">Наименование 3</label>
+          </div>
+          <div class="radio radio12">
+            <input type="radio" id="bolt4__radio" name="bolts" value="Наименование 4">
+              <label for="bolt4__radio">Наименование 4</label>
+          </div>
+      </div>
       <div class="center__column">
-        <div class="tires">
+        <div class="tires tires1">
           <h1>Goodyear</h1>
           <span class="tires__about">Ultra Grip Extreme</span>
           <img class="goodyear1" src="img/goodyear1.png" alt="goodyear1">
           <span class="price">90.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires2">
           <h1>Nokian</h1>
           <span class="tires__about">Hakkapeliitta R</span>
           <img class="nokian1" src="img/nokian1.png" alt="nokian1">
           <span class="price">115.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires3">
           <h1>Hankook</h1>
           <span class="tires__about">K 708 155/65 R14</span>
           <img class="hankook1" src="img/hankook1.png" alt="hankook1">
           <span class="price">393.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires4">
           <h1>Goodyear</h1>
           <span class="tires__about">Ultra Grip Extreme</span>
           <img class="goodyear1" src="img/goodyear1.png" alt="goodyear1">
           <span class="price">90.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires5">
           <h1>Nokian</h1>
           <span class="tires__about">Hakkapeliitta R</span>
           <img class="nokian1" src="img/nokian1.png" alt="nokian1">
           <span class="price">115.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires6">
           <h1>Hankook</h1>
           <span class="tires__about">K 708 155/65 R14</span>
           <img class="hankook1" src="img/hankook1.png" alt="hankook1">
           <span class="price">393.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires7">
           <h1>Goodyear</h1>
           <span class="tires__about">Ultra Grip Extreme</span>
           <img class="goodyear1" src="img/goodyear1.png" alt="goodyear1">
           <span class="price">90.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires8">
           <h1>Nokian</h1>
           <span class="tires__about">Hakkapeliitta R</span>
           <img class="nokian1" src="img/nokian1.png" alt="nokian1">
           <span class="price">115.00 грн.</span>
         </div>
-        <div class="tires">
+        <div class="tires tires9">
           <h1>Hankook</h1>
           <span class="tires__about">K 708 155/65 R14</span>
           <img class="hankook1" src="img/hankook1.png" alt="hankook1">
           <span class="price">393.00 грн.</span>
         </div>
       </div>
-      <div class="right__column"></div>
+      <div class="right__column">
+        <form>
+          <div class="brands">
+            <a href="#" class="brands__img"></a>
+            <a href="#" class="brands__name">БРЕНДЫ:</a>
+          </div>
+<!--ШИНЫ-->
+          <div class="tire-check">
+            <a class="tire-check__img" href="#"></a>
+            <a href="#" class="tire-check__name">ШИНЫ</a>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="tire1" name="tires" value="Бренд 1">
+              <label class="123" for="tire1">Бренд 1</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="tire2" name="tires" value="Бренд 2">
+              <label for="tire2">Бренд 2</label>
+          </div>
+          <div class="check check-bottom">
+            <input type="checkbox" id="tire3" name="tires" value="Бренд 3">
+              <label for="tire3">Бренд 3</label>
+          </div>
+<!--ДИСКИ-->
+          <div class="disk-check">
+            <a class="disk-check__img" href="#"></a>
+            <a href="#" class="disk-check__name">ДИСКИ</a>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="disk1" name="disks" value="Бренд 1">
+              <label class="123" for="disk1">Бренд 1</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="disk2" name="disks" value="Бренд 2">
+              <label for="disk2">Бренд 2</label>
+          </div>
+          <div class="check check-bottom">
+            <input type="checkbox" id="disk3" name="disks" value="Бренд 3">
+              <label for="disk3">Бренд 3</label>
+          </div>
+          <div class="submit-botton">
+            <input type="submit" name="name" value="ВЫБРАТЬ">
+          </div>
+        </form>
+      </div>
     </div>
+    <img class="emblems" src="img/emblems.png" alt="This is emblems!" />
+    <footer>
+      <ul class="menu-bottom">
+        <li class="menu-bottom__item1"><a class="menu-bottom__link" href="#">О компании</a></li>
+        <li class="menu-bottom__item2"><a class="menu-bottom__link" href="#">Доставка</a></li>
+        <li class="menu-bottom__item3"><a class="menu-bottom__link" href="#">Статьи</a></li>
+        <li class="menu-bottom__item4"><a class="menu-bottom__link" href="#">Контакты</a></li>
+      </ul>
+      <span class="copyright">Создание сайта &copy; Global Vision</span>
+    </footer>
   </div>
 </body>
 </html>
