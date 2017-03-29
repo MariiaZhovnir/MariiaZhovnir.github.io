@@ -24,6 +24,11 @@
         justify-content: space-around;
         align-items: center;
         width: 305px;
+
+}
+
+.contacts a {
+        text-decoration: none;
         font: normal 18px/1 Arial, sans-serif;
         color: #5e696d;
 }
