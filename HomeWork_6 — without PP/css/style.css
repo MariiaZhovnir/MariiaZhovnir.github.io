@@ -1,0 +1,464 @@
+.wrapper {
+        margin: 0 auto;
+        min-height: 100vh;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.pipe::before {
+        content: '|';
+        padding: 0 10px 0 10px;
+}
+
+/*HEADER!!!!!!!!!!*/
+.top-container {
+        display: flex;
+        justify-content: space-around;;
+        margin-top: 23px;
+}
+
+.contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 305px;
+        font: normal 18px/1 Arial, sans-serif;
+        color: #5e696d;
+}
+
+.fa-phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-image: -moz-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        color: #fff;
+}
+
+.contacts span {
+        white-space: nowrap;
+}
+
+.top-center {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 500px;
+          background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+          background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+          background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+          border-radius: 3px;
+          box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+}
+
+.fa-user {
+          color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+        width: 108px;
+        padding-left: 4px;
+        border: 1px solid #9fb7c5;
+        font: normal 10.91px/1 "Lucida Sans", sans-serif;
+        color: #97a2a6;
+        line-height: 13px;
+}
+
+input[type="submit"] {
+        padding: 0;
+        border: none;
+        background: none;
+        color: #fff;
+        font: normal 10.91px/1 "Lucida Sans", sans-serif;
+        cursor: pointer;
+}
+
+.registration {
+        text-decoration: none;
+        font: normal 10.91px/1 "Lucida Sans", sans-serif;
+        color: #fff;
+        line-height: 26px;
+}
+
+.forgot-password {
+        color: #bfbfbf;
+        font: normal 10.91px/1 "Lucida Sans", sans-serif;
+        line-height: 26px;
+}
+
+.navlist {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 75px;
+        height: 21px;
+        border: 1px solid #000;
+        border-color: rgb(189, 196, 199);
+        border-radius: 11px;
+}
+
+.navlist a {
+        display: block;
+        width: 13px;
+        height: 11px;
+        background: url(../img/sprite.png) 1px -42px no-repeat;
+}
+
+.navlist .map {
+        background-position: -12px -42px;
+}
+
+.navlist .mail {
+        background-position: -26px -42px;
+}
+
+header > img {
+        margin-top: 10px;
+        margin-bottom: 2px;
+}
+/*TOP MENU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.menu-top {
+        display: flex;
+        justify-content: space-between;
+        width: 910px;
+        height: 33px;
+        background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(44,48,52) 87%, rgb(87,96,104) 100%);
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        border-color: #0d163c;
+        font: normal 13.64px/1 "Lucida Sans", sans-serif;
+}
+
+.menu-top .menu__link:hover {
+        background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        border: 1px solid #1d6081;
+        border-radius: 15px;
+        color: #fff;
+}
+
+.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+}
+
+.menu__link {
+        display: block;
+        padding: 0 18px 0 20px;
+        border: 1px solid transparent;
+        text-decoration: none;
+        color: #b1bcc0;
+        line-height: 26px;
+}
+
+.basket {
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+        align-items: center;
+        font: normal 12px/1 Arial, sans-serif;
+}
+
+.basket-img {
+        display: block;
+        width: 21px;
+        height: 16px;
+        background: url(../img/sprite.png) 0px -25px no-repeat;
+}
+
+.basket .gray {
+        color: #929b9f;
+}
+
+.basket .blue {
+        margin-left: 0;
+        color: #0d5a8f;
+}
+
+/*MAIN SECTION!!!!!!!!!!*/
+.columns {
+        display: flex;
+        margin-top: 145px;
+        width: 910px;
+        font: normal 12.73px/13px "Lucida Sans", sans-serif;
+        color: #465961;
+}
+
+h1 {
+        font: bold 14.59px/15px "Lucida Sans", sans-serif;
+        color: #206988;
+        text-align: center;
+}
+
+.tires__about {
+        font: normal 12.77px/13px "Lucida Sans", sans-serif;
+        color: #1f2528;
+        text-align: center;
+}
+
+/*LEFT COLUMN!!!!!!!!!!*/
+.left-column {
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+}
+
+.column-name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        margin-bottom: 15px;
+        border: 1px solid #79878d;
+        border-radius: 11px;
+        box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.75);
+        color: #206988;
+        font: normal 12.73px/24px "Lucida Sans", sans-serif;
+}
+
+.fa-file-text-o {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px 0 5px;
+        border-radius: 50%;
+        background-image: -moz-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        color: #fff;
+}
+
+.section-part {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        border: 1px solid #79878d;
+        border-radius: 11px;
+        color: #206988;
+        font: normal 12.73px/24px "Lucida Sans", sans-serif;
+}
+
+.fa-circle-o {
+        font-size: 22px;
+        font-weight: 900;
+        padding: 0 5px 0 5px;
+}
+
+.list {
+        list-style-type: circle;
+        margin-left: 40px;
+}
+
+.aside-menu__list {
+        color: #465961;
+        font: normal 12.73px/24px "Lucida Sans", sans-serif;
+        text-decoration: none;
+}
+
+.aside-menu__list:hover {
+        font: bold 14px/24px Arial, sans-serif;
+        font-style: italic;
+        text-decoration: underline;
+}
+
+/*CENTER COLUMN*/
+.center-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 56%;
+        padding: 15px 20px 0;
+        background: rgb(252,255,255);
+        background: -moz-linear-gradient(top, rgba(252,255,255,1) 0%, rgba(247,251,252,1) 0%, rgba(246,250,251,1) 0%, rgba(248,252,253,1) 0%, rgba(246,250,251,1) 1%, rgba(248,252,253,1) 1%, rgba(246,250,251,1) 1%, rgba(245,249,250,1) 2%, rgba(245,250,253,1) 6%, rgba(243,248,251,1) 7%, rgba(243,248,251,1) 7%, rgba(247,248,252,1) 8%, rgba(246,247,251,1) 11%, rgba(247,251,254,1) 11%, rgba(247,251,254,1) 12%, rgba(243,247,250,1) 16%, rgba(242,247,251,1) 22%, rgba(240,245,249,1) 23%, rgba(242,247,251,1) 23%, rgba(238,247,246,1) 26%, rgba(239,247,249,1) 27%, rgba(237,245,247,1) 28%, rgba(240,248,250,1) 28%, rgba(238,246,248,1) 30%, rgba(242,246,249,1) 31%, rgba(242,246,249,1) 31%, rgba(238,246,248,1) 32%, rgba(241,245,248,1) 35%, rgba(238,243,246,1) 37%, rgba(238,243,246,1) 37%, rgba(238,246,249,1) 37%, rgba(235,243,246,1) 41%, rgba(235,245,247,1) 43%, rgba(231,240,245,1) 47%, rgba(233,242,247,1) 47%, rgba(233,242,247,1) 48%, rgba(231,241,242,1) 50%, rgba(234,244,246,1) 50%, rgba(233,242,249,1) 53%, rgba(233,243,245,1) 54%, rgba(233,241,244,1) 55%, rgba(233,241,244,1) 56%, rgba(232,241,248,1) 56%, rgba(230,239,246,1) 57%, rgba(231,238,246,1) 59%, rgba(233,240,248,1) 59%, rgba(230,240,242,1) 61%, rgba(231,242,246,1) 68%, rgba(230,241,245,1) 70%, rgba(228,239,243,1) 70%, rgba(228,239,243,1) 71%, rgba(225,239,242,1) 71%, rgba(225,240,243,1) 78%, rgba(230,237,243,1) 78%, rgba(230,237,245,1) 79%, rgba(228,237,244,1) 84%, rgba(226,235,242,1) 85%, rgba(228,237,244,1) 90%, rgba(225,236,242,1) 99%, rgba(227,236,243,1) 100%, rgba(240,245,251,1) 100%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(252,255,255,1) 0%,rgba(247,251,252,1) 0%,rgba(246,250,251,1) 0%,rgba(248,252,253,1) 0%,rgba(246,250,251,1) 1%,rgba(248,252,253,1) 1%,rgba(246,250,251,1) 1%,rgba(245,249,250,1) 2%,rgba(245,250,253,1) 6%,rgba(243,248,251,1) 7%,rgba(243,248,251,1) 7%,rgba(247,248,252,1) 8%,rgba(246,247,251,1) 11%,rgba(247,251,254,1) 11%,rgba(247,251,254,1) 12%,rgba(243,247,250,1) 16%,rgba(242,247,251,1) 22%,rgba(240,245,249,1) 23%,rgba(242,247,251,1) 23%,rgba(238,247,246,1) 26%,rgba(239,247,249,1) 27%,rgba(237,245,247,1) 28%,rgba(240,248,250,1) 28%,rgba(238,246,248,1) 30%,rgba(242,246,249,1) 31%,rgba(242,246,249,1) 31%,rgba(238,246,248,1) 32%,rgba(241,245,248,1) 35%,rgba(238,243,246,1) 37%,rgba(238,243,246,1) 37%,rgba(238,246,249,1) 37%,rgba(235,243,246,1) 41%,rgba(235,245,247,1) 43%,rgba(231,240,245,1) 47%,rgba(233,242,247,1) 47%,rgba(233,242,247,1) 48%,rgba(231,241,242,1) 50%,rgba(234,244,246,1) 50%,rgba(233,242,249,1) 53%,rgba(233,243,245,1) 54%,rgba(233,241,244,1) 55%,rgba(233,241,244,1) 56%,rgba(232,241,248,1) 56%,rgba(230,239,246,1) 57%,rgba(231,238,246,1) 59%,rgba(233,240,248,1) 59%,rgba(230,240,242,1) 61%,rgba(231,242,246,1) 68%,rgba(230,241,245,1) 70%,rgba(228,239,243,1) 70%,rgba(228,239,243,1) 71%,rgba(225,239,242,1) 71%,rgba(225,240,243,1) 78%,rgba(230,237,243,1) 78%,rgba(230,237,245,1) 79%,rgba(228,237,244,1) 84%,rgba(226,235,242,1) 85%,rgba(228,237,244,1) 90%,rgba(225,236,242,1) 99%,rgba(227,236,243,1) 100%,rgba(240,245,251,1) 100%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(252,255,255,1) 0%,rgba(247,251,252,1) 0%,rgba(246,250,251,1) 0%,rgba(248,252,253,1) 0%,rgba(246,250,251,1) 1%,rgba(248,252,253,1) 1%,rgba(246,250,251,1) 1%,rgba(245,249,250,1) 2%,rgba(245,250,253,1) 6%,rgba(243,248,251,1) 7%,rgba(243,248,251,1) 7%,rgba(247,248,252,1) 8%,rgba(246,247,251,1) 11%,rgba(247,251,254,1) 11%,rgba(247,251,254,1) 12%,rgba(243,247,250,1) 16%,rgba(242,247,251,1) 22%,rgba(240,245,249,1) 23%,rgba(242,247,251,1) 23%,rgba(238,247,246,1) 26%,rgba(239,247,249,1) 27%,rgba(237,245,247,1) 28%,rgba(240,248,250,1) 28%,rgba(238,246,248,1) 30%,rgba(242,246,249,1) 31%,rgba(242,246,249,1) 31%,rgba(238,246,248,1) 32%,rgba(241,245,248,1) 35%,rgba(238,243,246,1) 37%,rgba(238,243,246,1) 37%,rgba(238,246,249,1) 37%,rgba(235,243,246,1) 41%,rgba(235,245,247,1) 43%,rgba(231,240,245,1) 47%,rgba(233,242,247,1) 47%,rgba(233,242,247,1) 48%,rgba(231,241,242,1) 50%,rgba(234,244,246,1) 50%,rgba(233,242,249,1) 53%,rgba(233,243,245,1) 54%,rgba(233,241,244,1) 55%,rgba(233,241,244,1) 56%,rgba(232,241,248,1) 56%,rgba(230,239,246,1) 57%,rgba(231,238,246,1) 59%,rgba(233,240,248,1) 59%,rgba(230,240,242,1) 61%,rgba(231,242,246,1) 68%,rgba(230,241,245,1) 70%,rgba(228,239,243,1) 70%,rgba(228,239,243,1) 71%,rgba(225,239,242,1) 71%,rgba(225,240,243,1) 78%,rgba(230,237,243,1) 78%,rgba(230,237,245,1) 79%,rgba(228,237,244,1) 84%,rgba(226,235,242,1) 85%,rgba(228,237,244,1) 90%,rgba(225,236,242,1) 99%,rgba(227,236,243,1) 100%,rgba(240,245,251,1) 100%,rgba(255,255,255,1) 100%);
+        border-radius: 3px;
+}
+
+.tire {
+        margin-bottom: 25px;
+}
+
+.tire__link {
+        text-decoration: none;
+}
+
+.tires__about {
+        text-align: center;
+        font: normal 12.77px/13px "Lucida Sans", sans-serif;
+        color: #1f2528;
+}
+
+.tire__header {
+        font: normal 14.59px/15px "Lucida Sans", sans-serif;
+}
+
+figcaption {
+        font: italic bold 16px/1 Arial, sans-serif;
+        color: #114165;
+        text-align: center;
+}
+
+/*RIGHT COLUMN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.right-column {
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        padding-left: 5px;
+
+}
+
+fieldset {
+        display: flex;
+        justify-content: flex-start;
+}
+
+fieldset > .section-part {
+        margin-left: 20px;
+}
+
+label {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        color: #465961;
+        font: normal 12.73px/24px "Lucida Sans", sans-serif;
+}
+
+input[type="checkbox"] {
+        margin-right: 5px;
+}
+
+.submit-botton {
+        width: 80px;
+        margin: 20px;
+        color: #fff;
+        background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -webkit-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        background-image: -ms-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+        border: 1px solid #a7abae;
+        border-radius: 11px;
+        font: normal 11px/23px Arial, sans-serif;
+        text-align: center;
+}
+
+/*IMAGES OF EMBLEMS!!!!!!!!!!*/
+.emblems {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 25px 0;
+}
+
+.emblems li {
+        margin-right: 10px;
+}
+
+.emblems li:last-child {
+        margin-right: 0;
+}
+
+.toyo {
+          display: block;
+          width: 83px;
+          height: 27px;
+          background: url(../img/emblems-sprite.png) 0px 0px no-repeat;
+}
+
+.bridgestone {
+        display: block;
+        width: 98px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -95px 0px no-repeat;
+}
+
+.continental {
+        display: block;
+        width: 79px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -204px 0px no-repeat;
+}
+
+.dooper {
+        display: block;
+        width: 61px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -296px 0px no-repeat;
+}
+
+.avon {
+        display: block;
+        width: 79px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -367px 0px no-repeat;
+}
+
+.factory {
+        display: block;
+        width: 59px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -457px 0px no-repeat;
+}
+
+.pirelli {
+        display: block;
+        width: 63px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -527px 0px no-repeat;
+}
+
+.dunlop {
+        display: block;
+        width: 73px;
+        height: 27px;
+        background: url(../img/emblems-sprite.png) -603px 0px no-repeat;
+}
+
+/*FOOTER PROPERTIES*/
+footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 910px;
+        height: 100px;
+        border: 1px solid #242a3c;
+        background: #213a4d;
+}
+  /*MENU IN THE BOTTOM OF THE PAGE!!!!!!!!!!*/
+.menu-bottom {
+        display: flex;
+        justify-content: flex-start;
+}
+
+.menu-bottom__link {
+        display: block;
+        font: normal 12px/1 Arial, sans-serif;
+        color: #bec6c9;
+        text-decoration: none;
+}
+
+.menu-bottom__link:hover {
+        color: #52abcb;
+}
+
+.copyright {
+        font: normal 10px/1 Arial, sans-serif;
+        color: #7f4740;
+}
