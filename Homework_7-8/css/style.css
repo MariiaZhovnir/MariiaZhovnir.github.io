@@ -1,0 +1,1017 @@
+/* font-family: "LeagueGothicRegular"; */
+@font-face {
+    font-family: "LeagueGothicRegular";
+    src: url("fonts/LeagueGothicRegular/LeagueGothicRegular.eot");
+    src: url("fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LeagueGothicRegular/LeagueGothicRegular.woff") format("woff"),
+    url("fonts/LeagueGothicRegular/LeagueGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+    src: url("fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+    url("fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER   */
+.wrapper--img {
+        background: url(../img/headline.jpg) no-repeat scroll top;
+        background-size: cover;
+        border-bottom: 1px solid #35273c;
+}
+
+.container {
+        width: 100%;
+        min-width: 20rem;
+        max-width: 60rem;
+}
+
+.page-header {
+        padding: 4.3rem 0;
+}
+
+.navbar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*   LOGO   */
+.logo {
+        display: block;
+        color: #fff;
+        font: 3rem/1 "LeagueGothicRegular", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.er {
+        color: #543b5f;
+}
+
+/*   MENU   */
+.menu-header {
+      	visibility: hidden;
+}
+
+.menu-header:hover {
+    		visibility: visible;
+}
+
+.menu-header:hover .menu__link {
+    		display: block;
+}
+
+.menu-header:hover .menu__link--initial {
+    		text-shadow: none;
+    		border: 0;
+        padding: 0;
+}
+
+.menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center;
+        border: 1px solid rgba(5, 17, 22, 0.8);
+        border-radius: 5px;
+        overflow: hidden;
+        font: 1.5rem/2.56rem "LeagueGothicRegular", sans-serif;
+        text-transform: uppercase;
+        z-index: 1;
+}
+
+.menu__item {
+      	overflow: hidden;
+      	background-color: #36293e;
+      	background-color: rgba(54, 41, 62, 0.9);
+      	border-bottom: 1px solid rgba(53, 39, 61, 0.9);
+      	box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
+}
+
+.menu__link {
+      	min-width: 15.25rem;
+      	height: 2.56rem;
+      	color: #fefefe;
+      	text-align: center;
+      	text-decoration: none;
+        border-bottom: 2px solid transparent;
+}
+
+.menu__link:hover {
+    		display: block;
+    		background-color: #13070C;
+    		background-color: rgba(0, 0, 0, 0.3);
+    		text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    		border-bottom: 2px solid #edbfff;
+}
+
+.menu__link:hover > .menu__link--initial {
+  			text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  			border-bottom: 2px solid #edbfff;
+}
+
+.menu__link--initial {
+        visibility: visible;
+    		padding: 0 .3rem;
+    		border-bottom: 2px solid #edbfff;
+    		text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.iphone {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: -.5rem;
+}
+
+.iphone-to768 {
+        display: none;
+}
+
+.iphone-from768 {
+        display: none;
+}
+
+/*   PROMO   */
+.promo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-align: center;
+            align-items: center;
+        padding-bottom: 5rem;
+        margin-top: -6rem;
+        text-align: center;
+        color: #fff;
+        font-family: "LeagueGothicRegular";
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.arrows {
+        width: 22px;
+        height: 34px;
+        fill: #fff;
+}
+
+.promo__title {
+        font-size: 2.25rem;
+}
+
+.promo__subtitle {
+        font-size: 1.125rem;
+        color: #edbfff;
+        text-transform: uppercase;
+}
+
+.promo__text {
+        display: none;
+        font: 1rem/1.5rem "OpenSansLight", sans-serif;
+}
+
+/*   SLIDER   */
+.slider {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.slider__link--gray {
+        width: 17px;
+        height: 17px;
+        display: block;
+        margin-left: 5px;
+        background: url(../img/nav-gray.png) -2px 0px no-repeat;
+}
+
+.slider__link--gray:active {
+        width: 17px;
+        height: 17px;
+        display: block;
+        background: url(../img/nav-gray.png) -2px -18px no-repeat;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION ABOUT   */
+.wrapper--purple {
+        padding: 4.5rem 1.25rem 4.25rem;
+        background: url(../img/purple.jpg) no-repeat scroll top;
+        background-size: cover;
+}
+
+.info {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.info__item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        width: 82.5%;
+        margin-bottom: 1.75rem;
+        padding-left: .625rem;
+}
+
+.icon-from960 {
+        display: none;
+}
+
+.info__item--bottom {
+        margin-bottom: 0;
+}
+
+h3 {
+        font: 1.875rem/1 "LeagueGothicRegular", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 0px rgba(15, 21, 24, 1);
+}
+
+.article {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        width: 80%;
+        text-shadow: 0px 1px 0px rgba(15, 21, 24, 1);
+}
+
+.article__title {
+        margin-bottom: .5rem;
+        color: #fff;
+}
+
+.article__text {
+        height: 4.5rem;
+        margin-bottom: 1.25rem;
+        overflow: hidden;
+        font: 1rem/1.5rem "OpenSansLight", sans-serif;
+        color: #fff;
+}
+
+.article__link {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        font: 1.125rem/1 "LeagueGothicRegular", sans-serif;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+}
+
+.article__link:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     UPDATES BLOCK     */
+.wrapper--gray {
+        background-color: #f9f9f9;
+}
+
+.blog {
+        padding: 4.375rem 1.25rem 5.75rem;
+        box-sizing: border-box;
+}
+
+/*     SECTION COMMENTS     */
+.comments {
+        padding-left: 1.5rem;
+        margin-bottom: 3.2rem;
+}
+
+.comments__body {
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 1.75rem;
+        padding-bottom: 2.2rem;
+        margin-bottom: 1.5rem;
+        background: #fff;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.comments__avatar {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin-left: -1.5rem;
+}
+
+.comments__article {
+        width: 70%;
+        margin-left: .75rem;
+}
+
+.comments__title {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 50%;
+        margin-bottom: .5rem;
+        font: 1.5rem/1 "LeagueGothicRegular", sans-serif;
+        text-transform: uppercase;
+        color: #454545;
+}
+
+.comments__title--pink {
+        color: #edbfff;
+}
+
+.comments__text {
+        height: 10.5rem;
+        overflow: hidden;
+        font: 1rem/1.5rem "OpenSansLight", sans-serif;
+        color: #454545;
+}
+
+/*   SLIDER-WHITE   */
+.slider__link--white {
+        display: block;
+        width: 19px;
+        height: 19px;
+        margin-left: 3px;
+        background: url(../img/nav-white.png) 0px 0px no-repeat;
+}
+
+.slider__link--white:active {
+        display: block;
+        width: 19px;
+        height: 19px;
+        background: url(../img/nav-white.png) 0px -20px no-repeat;
+}
+
+/*     SECTION UPDATES     */
+.updates {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.updates__title {
+        margin-bottom: 1.25rem;
+        color: #454545;
+}
+
+.updates__item {
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 1rem;
+}
+
+.updates__item--bottom {
+        margin-bottom: 1.25rem;
+}
+
+.updates__article--body {
+        margin-left: .9rem;
+}
+
+.updates__item--title {
+        width: 10rem;
+        max-height: 1.5rem;
+        overflow: hidden;
+        font: 1rem/1.5rem "OpenSansExtraBold", sans-serif;
+        color: #454545;
+}
+
+.updates__item--text {
+        max-height: 1.5rem;
+        overflow: hidden;
+        font: 1rem/1.5rem "OpenSansLight", sans-serif;
+        color: #454545;
+}
+
+.updates__link {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        font: 1.125rem/1 "LeagueGothicRegular", sans-serif;
+        color: #454545;
+        text-transform: uppercase;
+        text-decoration: none;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   EMBLEMS   */
+.wrapper--products {
+        background-color: #f9f9f9;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+}
+.emblems {
+        padding-top: 3.25rem;
+        padding-bottom: 4.75rem;
+        background-color: #f9f9f9;
+}
+
+.emblems__list {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+}
+
+.emblems__item {
+        width: 50%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        margin-bottom: 3.75rem;
+}
+
+.emblems__item:nth-child(5),
+.emblems__item:nth-child(6) {
+        margin-bottom: 0;
+}
+
+.bllabong {
+        display: block;
+        width: 70px;
+        height: 64px;
+        background: url(../img/logos.png) 0px 0px no-repeat;
+}
+
+.dg {
+        display: block;
+        width: 73px;
+        height: 64px;
+        background: url(../img/logos.png) -124px 0px no-repeat;
+}
+
+.arrow {
+        display: block;
+        width: 66px;
+        height: 64px;
+        background: url(../img/logos.png) -202px 0px no-repeat;
+}
+
+.awsm {
+        display: block;
+        width: 53px;
+        height: 64px;
+        background: url(../img/logos.png) -331px 0px no-repeat;
+}
+
+.rvca {
+        display: block;
+        width: 105px;
+        height: 64px;
+        background: url(../img/logos.png) -387px 0px no-repeat;
+}
+
+.vonzipper {
+        display: block;
+        width: 80px;
+        height: 64px;
+        background: url(../img/logos.png) -546px 0px no-repeat;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   PUBLICATIONS   */
+.wrapper--dark-gray {
+        display: none;
+        background: #ececec;
+}
+
+.categories {
+          padding: 5rem 1.25rem 5.5rem;
+          font: 1rem/1.5rem "OpenSansLight", sans-serif;
+          color: #787878;
+}
+
+.publications {
+        margin-bottom: 3.75rem;
+}
+
+.categories .publications:last-child {
+        margin-bottom: 0;
+}
+
+.publications__title {
+        margin-bottom: 1rem;
+        font: 1.5rem/1 "LeagueGothicRegular", sans-serif;
+        text-transform: uppercase;
+        color: #454545;
+}
+
+.publications__title--full {
+        display: none;
+}
+
+.publications__title--pingbuller {
+        font-size: 3rem;
+}
+
+.ER--full {
+        color: #b9b9b9;
+}
+
+.copyright--full {
+        display: none;
+        margin-bottom: .5rem;
+        font: italic 1rem/1 Georgia;
+        color: #c5c5c5;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.publications__text {
+        height: 6rem;
+        overflow: hidden;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   FOOTER   */
+.wrapper--footer {
+        padding: 2.5rem 1.25rem 9rem;
+        background: url(../img/bg-footer.jpg) no-repeat scroll top;
+        background-size: cover;
+}
+
+.footer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/*     MENU IN FOOTER     */
+.navbar-footer {
+        display: none;
+        width: 100%;
+}
+
+.menu-footer {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        border: none;
+        border-radius: 0;
+        max-height: 1.25rem;
+        margin-bottom: 2.25rem;
+        font: 1.25rem/1 "LeagueGothicRegular", sans-serif;
+        text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu-footer__item {
+        background: none;
+        border: none;
+        box-shadow: none;
+}
+.menu-footer__link {
+        min-width: auto;
+        height: auto;
+}
+.menu-footer__link--initial {
+        text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+        padding: 0;
+}
+
+.menu-footer__link:hover {
+        background: none;
+    		text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    		border: none;
+}
+
+/*     SITE DESIGNER     */
+.site-designer {
+        font: .75rem "OpenSansLight", sans-serif;
+        color: #fff;
+        text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.AS {
+        font-family: "OpenSansExtraBold";
+}
+
+@media screen and (min-width: 480px) {
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER   */
+  .page-header {
+          padding-bottom: 3.75rem;
+  }
+  /*   PROMO   */
+  .promo {
+          padding: 6rem 0;
+          margin-bottom: 1.5rem;
+          margin-top: -12.5rem;
+          position: relative;
+          background-color: rgba(0, 0, 0, .2);
+  }
+  .iphone-to768 {
+          display: block;
+  }
+  .promo-block {
+          width: 90%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: start;
+              align-items: flex-start;
+          padding-left: 1rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION ABOUT   */
+  .article {
+          width: 90%;
+  }
+  .info__item {
+          width: auto;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     UPDATES BLOCK     */
+  /*     SECTION COMMENTS     */
+  .comments__article {
+        width: 82%;
+  }
+  .comments__title {
+      display: block;
+      width: auto;
+      margin-bottom: 1.5rem;
+  }
+  /*     SECTION UPDATES     */
+  .updates {
+          width: 75%;
+  }
+  .updates__item--title {
+          width: 14rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   EMBLEMS   */
+  .emblems {
+          padding-top: 2.25rem;
+          padding-bottom: 2.5rem;
+  }
+  .emblems__item {
+          width: 33.33%;
+          margin-bottom: 1.5rem;
+  }
+  .emblems__item:nth-child(4),
+  .emblems__item:nth-child(5),
+  .emblems__item:nth-child(6) {
+          margin-bottom: 0;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   PUBLICATIONS   */
+  .wrapper--dark-gray {
+          display: -ms-flexbox;
+          display: flex;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   FOOTER   */
+  .wrapper--footer {
+          padding-bottom: 5.5rem;
+  }
+  .navbar-footer {
+          display: block;
+  }
+  .footer {
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: center;
+              align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER   */
+  .page-header {
+          padding-bottom: 6.25rem;
+  }
+  .navbar {
+          -ms-flex-align: start;
+              align-items: flex-start;
+          padding-left: 1.25rem;
+  }
+  /*   LOGO   */
+  .logo {
+          margin-bottom: 2rem;
+  }
+  /*   MENU   */
+  .menu {
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          height: auto;
+          width: 85%;
+          border: none;
+          text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+  }
+  .menu__item {
+          visibility: visible;
+          background: none;
+          border: none;
+          box-shadow: none;
+  }
+  .menu__link {
+          min-width: auto;
+          line-height: 1.5rem;
+          height: auto;
+          padding: 0 .3rem;
+  }
+  .menu__link--initial {
+          border-bottom: transparent;
+          text-shadow: inherit;
+  }
+  .menu__link:hover {
+          background: none;
+          border-bottom: 2px solid #edbfff;
+  }
+  .menu__item--initial:hover {
+          border-bottom: 2px solid #edbfff;
+  }
+  /*   PROMO   */
+  .promo {
+          margin-top: 4.5rem;
+          padding: 7rem 0;
+  }
+  .promo__text {
+          display: block;
+          width: 47%;
+          height: 6rem;
+          text-align: start;
+          overflow: hidden;
+  }
+  .promo__title {
+          font-size: 3rem;
+          line-height: 3.5rem;
+  }
+  .promo__subtitle {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+  }
+  .iphone-from768 {
+          display: block;
+  }
+  .iphone {
+          top: -1.5rem;
+          right: 3rem;
+  }
+  /*   SLIDER   */
+  .slider--gray {
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          margin-right: 18%;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION ABOUT   */
+  .info {
+          -ms-flex-direction: row;
+              flex-direction: row;
+  }
+  .info__item {
+          margin-bottom: 0;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+  }
+  .article {
+          width: 68%;
+  }
+  .article__title {
+          font-size: 1.5rem;
+  }
+  .article__text {
+          height: 9rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     UPDATES BLOCK     */
+  .blog {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          padding-top: 6.25rem;
+          padding-bottom: 4.625rem;
+  }
+  /*     SECTION COMMENTS     */
+  .comments {
+          width: 43%;
+          margin-bottom: 0;
+  }
+  .comments__avatar {
+          margin-top: -.8rem;
+  }
+  .comments__body {
+          padding-bottom: 3rem;
+  }
+  .comments__title {
+          width: 50%;
+          margin-bottom: 1rem;
+  }
+  .comments__text {
+          height: 9rem;
+  }
+  /*     SECTION UPDATES     */
+  .updates {
+          width: 45%;
+          padding-top: 2rem;
+  }
+  .updates__item {
+          margin-bottom: 1.25rem;
+  }
+  .updates__item--title {
+          width: auto;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   EMBLEMS   */
+  .emblems {
+          padding: 1.625rem 1.25rem 1.875rem;
+  }
+  .emblems__list {
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+  }
+  .emblems__item {
+          width: auto;
+          margin-bottom: 0;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   PUBLICATIONS   */
+  .categories {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          padding: 6.5rem 1.25rem 6.25rem;
+  }
+  .publications {
+          width: 28%;
+          margin-bottom: 0;
+  }
+  .publications__text {
+          height: 10.5rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   FOOTER   */
+  .wrapper--footer {
+          padding-top: 2.75rem;
+  }
+  .navbar-footer {
+          padding-left: 0;
+          margin-bottom: 2rem;
+  }
+  .menu-footer {
+          width: 70%;
+          margin-bottom: 0;
+  }
+  .site-designer {
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   HEADER   */
+  .page-header {
+          padding-bottom: 3.75rem;
+  }
+  .navbar {
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          padding-left: 0;
+          margin-bottom: 0;
+  }
+  /*   MENU   */
+  .menu {
+          width: 70%;
+  }
+  /*   LOGO   */
+  .logo {
+          margin-bottom: 0;
+  }
+  /*   PROMO   */
+  .iphone {
+          right: 4.5rem;
+  }
+  .arrows {
+          display: none;
+  }
+  .promo-block {
+          padding: 0;
+  }
+  .promo__text {
+          width: 58%;
+          font-size: 1.125rem;
+          height: 9rem;
+  }
+  .promo__subtitle {
+          font-size: 2rem;
+          line-height: 2rem;
+  }
+  .promo__title {
+            font-size: 3.75rem;
+            line-height: 3.75rem;
+  }
+  .promo {
+          padding: 5.25rem 0;
+          margin-bottom: 5.875rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   SECTION ABOUT   */
+  .wrapper--purple {
+          padding: 5rem 0 4.375rem;
+  }
+  .article {
+          width: 74%;
+  }
+  .article__text {
+          height: 7.5rem;
+  }
+  .icon-to960 {
+          display: none;
+  }
+  .icon-from960 {
+          display: block;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     UPDATES BLOCK     */
+  .blog {
+          padding-left: 0;
+          padding-right: 0;
+  }
+  /*     SECTION COMMENTS     */
+  .comments {
+          width: 45%;
+  }
+  .comments__body {
+          padding-top: 2.25rem;
+          background: url(../img/comment.png) 0px 0px no-repeat;
+          box-shadow: none;
+          margin-bottom: 0;
+  }
+  .comments__title {
+          width: auto;
+  }
+  .comments__text {
+          height: auto;
+  }
+  /*     SECTION UPDATES     */
+  .updates {
+          width: 46%;
+          padding-right: 1rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   EMBLEMS   */
+  .emblems__list {
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   PUBLICATIONS   */
+  .categories {
+          padding: 6.25rem 0;
+  }
+  .publications__title--full {
+          display: block;
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  }
+  .copyright--full {
+          display: block;
+  }
+  .publications__title--short {
+          display: none;
+  }
+  .publications__text--full {
+          height: 7.5rem;
+  }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   FOOTER   */
+  .wrapper--footer {
+          padding: 3rem 0;
+  }
+  .footer {
+          -ms-flex-direction: row;
+              flex-direction: row;
+  }
+  .site-designer {
+        width: 30%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
