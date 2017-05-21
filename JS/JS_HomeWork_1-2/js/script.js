@@ -1,7 +1,9 @@
 //Function "POW" analogy
+var result;
+
 function pow(num, exp) {
   'use strict';
-  var result = num;
+  result = num;
 
   for (var i = 1; i < exp; i++) {
     result *= num;
@@ -24,30 +26,29 @@ if (exp < 0) {
   alert ('The result of raising to zero power = ' + result);
   console.log('The result of raising to zero power = ' + result);
 } else {
-  alert( pow(num, exp) );
+  alert( 'The result of the exponentiation: ' + pow(num, exp) );
   console.log('The result of the exponentiation: ' + pow(num, exp));
 }
 
 
-// var arr = [];
-// arr.length = 5;
-//
-// for (var i = 0; i < arr.length; i++) {
-//   arr[i] = prompt('Please, enter your name', '');
-//   console.log('Name: ' + arr[i]);
-// }
-//
-// var userName = prompt('Please, enter your username', '');
-// console.log('user name: ' + userName);
-//
-// for (i = 0; i < arr.length; i++) {
-//   if (userName === arr[i]) {
-//   var  searchResult = true;
-//   }
-// }
-//
-// if (searchResult) {
-//   alert(userName + ', You have successfully entered!');
-// } else {
-//   alert( 'Wrong user name!');
-// }
+var arr = [];
+
+for (var i = 0; i < 5; i++) {
+  arr[i] = prompt('Please, enter your name', '');
+  console.log('Name: ' + arr[i]);
+}
+
+var userName = prompt('Please, enter your username', '');
+console.log('user name: ' + userName);
+
+for (i = 0; i < arr.length; i++) {
+  if (userName === arr[i]) {
+  var  searchResult = true;
+  }
+}
+
+if (searchResult) {
+  alert(userName + ', You have successfully entered!');
+} else {
+  alert( 'Wrong user name!');
+}
