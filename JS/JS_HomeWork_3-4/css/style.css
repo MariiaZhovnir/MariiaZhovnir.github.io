@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.questions__item--name {
+  font-size: 1em;
+}
+
+.questions__item,
+.answers__item {
+  list-style: none;
+}
+
+.test-check {
+  display: flex;
+  justify-content: center;
+}
