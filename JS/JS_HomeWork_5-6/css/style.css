@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 300px;
+  /*border: 2px solid red;*/
+}
+
+.start,
+.pause,
+.reset{
+  width: 100px;
+  /*margin: 10px;*/
+}
+
+.time-window {
+  font-size: 2rem;
+  margin:10px;
+  border: 1px solid #000;
+  text-align: right;
+}
