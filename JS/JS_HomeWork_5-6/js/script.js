@@ -6,6 +6,7 @@
         this.switched = false;
         this.startTime = 0;
         this.deltaTime = 0;
+        this.pauseTime = 0;
         this.intervalID = null;
 
         this.createTimerShell = function () {
@@ -29,7 +30,6 @@
             this.timeField.timeWindow.innerHTML = '0';
 
             startButton.addEventListener('click', this.start.bind(this));
-            startButton.addEventListener('click', this.restart.bind(this));
             pauseButton.addEventListener('click', this.pause.bind(this));
             resetButton.addEventListener('click', this.reset.bind(this));
 
@@ -54,7 +54,7 @@
         };
 
         this.timeChanging = function () {
-            this.deltaTime = new Date(Date.now() - this.startTime);
+            this.deltaTime = new Date(Date.now() - this.startTime + this.pauseTime);
             this.updateHTML();
         };
 
@@ -64,23 +64,13 @@
 
         this.pause = function () {
             clearInterval(this.intervalID);
+            this.pauseTime = Date.now() - this.startTime;
             this.switched = false;
-        };
-
-        this.restart = function () {
-            if (!this.switched) {
-                this.pauseTime();
-                this.intervalID = setInterval(this.timeChanging.bind(this), 1);
-                this.switched = true;
-            }
-        };
-
-        this.pauseTime = function () {
-            this.startTime = this.deltaTime;
         };
 
         this.reset = function () {
             this.startTime = 0;
+            this.pauseTime = 0;
             this.timeField.timeWindow.innerHTML = '0';
             this.switched = false;
         };
