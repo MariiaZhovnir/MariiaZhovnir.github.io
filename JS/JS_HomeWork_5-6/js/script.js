@@ -1,86 +1,72 @@
 (function () {
-'use strict';
-    var Timer;
-    Timer = function () {
-        this.timeField = {};
-        this.switched = false;
-        this.startTime = 0;
-        this.deltaTime = 0;
-        this.pauseTime = 0;
-        this.intervalID = null;
+    'use strict';
 
-        this.createTimerShell = function () {
-            var container = document.createElement('div');
-            container.setAttribute('class', 'timer');
+var Timer = function(el) {
+    this.startTime = null;
+    this.deltaTime = null;
+    this.isActive = false;
+    this.intervalID = null;
+    this.textField = el;
 
-            var startButton = document.createElement('button');
-            startButton.setAttribute('class', 'start');
-            startButton.innerHTML = 'START';
-
-            var pauseButton = document.createElement('button');
-            pauseButton.setAttribute('class', 'pause');
-            pauseButton.innerHTML = 'PAUSE';
-
-            var resetButton = document.createElement('button');
-            resetButton.setAttribute('class', 'reset');
-            resetButton.innerHTML = 'RESET';
-
-            this.timeField.timeWindow = document.createElement('p');
-            this.timeField.timeWindow.setAttribute('class', 'time-window');
-            this.timeField.timeWindow.innerHTML = '0';
-
-            startButton.addEventListener('click', this.start.bind(this));
-            pauseButton.addEventListener('click', this.pause.bind(this));
-            resetButton.addEventListener('click', this.reset.bind(this));
-
-            container.appendChild(this.timeField.timeWindow);
-            container.appendChild(startButton);
-            container.appendChild(pauseButton);
-            container.appendChild(resetButton);
-
-            return container;
-        };
-
-        this.start = function () {
-            if (!this.switched) {
-                this.startingPoint();
-                this.intervalID = setInterval(this.timeChanging.bind(this), 1);
-                this.switched = true;
-            }
-        };
-
-        this.startingPoint = function () {
-            this.startTime = Date.now();
-        };
-
-        this.timeChanging = function () {
-            this.deltaTime = new Date(Date.now() - this.startTime + this.pauseTime);
-            this.updateHTML();
-        };
-
-        this.updateHTML = function () {
-            this.timeField.timeWindow.innerHTML = this.deltaTime.getMinutes() + ':' + this.deltaTime.getSeconds() + ':' + this.deltaTime.getMilliseconds();
-        };
-
-        this.pause = function () {
-            clearInterval(this.intervalID);
-            this.pauseTime = Date.now() - this.startTime;
-            this.switched = false;
-        };
-
-        this.reset = function () {
-            this.startTime = 0;
-            this.pauseTime = 0;
-            this.timeField.timeWindow.innerHTML = '0';
-            this.switched = false;
-        };
-
-        this.init = function () {
-            var timerInit = document.querySelector('#root');
-            timerInit.appendChild(this.createTimerShell());
-        };
+    this.start = function() {
+        if (!this.isActive) {
+            this.startTime = Date.now() - this.deltaTime;
+            this.intervalID = setInterval(this.update.bind(this), 1);
+            this.isActive = true;
+        }
     };
-    var timer = new Timer();
-    console.log(timer);
-    timer.init();
+
+    this.update = function() {
+        this.deltaTime = Date.now() - this.startTime;
+        this.updateHTML();
+    };
+
+    this.updateHTML = function() {
+        var time = new Date(this.deltaTime),
+            hours = this.padDigits(time.getUTCHours()),
+            min = this.padDigits(time.getMinutes()),
+            sec = this.padDigits(time.getSeconds()),
+            ms = time.getMilliseconds();
+
+        this.textField.textContent = hours + ':' + min + ':' + sec + ':' + ms;
+    };
+
+    this.padDigits = function (val) {
+        if (val.toString().length < 2) {
+            return '0' + val;
+        }
+        return val;
+     };
+
+    this.pause = function() {
+      clearInterval(this.intervalID);
+      this.isActive = false;
+    };
+
+    this.reset = function() {
+        clearInterval(this.intervalID);
+        this.deltaTime = 0;
+        this.updateHTML();
+        this.isActive = false;
+    };
+};
+
+var startButton = document.querySelector('#start'),
+    pauseButton = document.querySelector('#pause'),
+    resetButton = document.querySelector('#reset'),
+    textField = document.querySelector('#timer-text');
+
+var timer = new Timer(textField);
+
+startButton.addEventListener('click', function() {
+    timer.start();
+});
+
+pauseButton.addEventListener('click', function() {
+    timer.pause();
+});
+
+resetButton.addEventListener('click', function() {
+    timer.reset();
+});
 }) ();
