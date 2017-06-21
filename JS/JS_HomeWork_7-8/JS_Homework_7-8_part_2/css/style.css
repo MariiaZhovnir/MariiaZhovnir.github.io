@@ -28,9 +28,6 @@ fieldset {
     z-index: 400;
     display:none;
 }
-#hint {
-    position: absolute;
-}
 
 button {
     margin: 10px;
