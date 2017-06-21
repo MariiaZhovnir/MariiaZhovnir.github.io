@@ -1,0 +1,38 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.caption {
+    display: inline-block;
+    width: 100px;
+}
+
+.tool-item{
+    cursor: pointer;
+}
+.tooltip-block{
+    position: absolute;
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    padding: 5px 8px;
+    font-size: 10px;
+    width: 140px;
+    line-height: 13px;
+    color: red;
+    z-index: 400;
+    display:none;
+}
+#hint {
+    position: absolute;
+}
+
+button {
+    margin: 10px;
+}
+
