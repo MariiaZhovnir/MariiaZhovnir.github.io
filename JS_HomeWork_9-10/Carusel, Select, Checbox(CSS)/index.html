@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+    <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+
+    <script src="js/jquery.fs.selecter.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/jquery.fs.selecter.min.css">
+    <script>
+        $(document).ready(function(){
+            $("select").selecter();
+        })
+    </script>
+
+    <script src="js/jquery.checkbox.js"></script>
+    <title>Homework 9-10</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Basic carousel</h1>
+
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+            </ul>
+        </div>
+        <p class="photo-credits">
+            Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+        </p>
+
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+        <p class="jcarousel-pagination">
+    </div>
+    <div>
+        <select>
+            <option value="AL">Option 1</option>
+            <option value="AL">Option 2</option>
+            <option value="AL">Option 3</option>
+            <option value="AL">Option 4</option>
+            <option value="AL">Option 5</option>
+            <option value="AL">Option 6</option>
+            <option value="AL">Option 7</option>
+        </select>
+    </div>
+    <div>
+        <span class="niceCheck">
+            <input type="checkbox" name="ch1">
+        </span>
+    </div>
+    <div class="checkbox-css">
+        <h1>Made by CSS</h1>
+        <div>
+            <input type="checkbox" id="check1">
+            <label for="check1">Label 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="check2">
+            <label for="check2">Label 2</label>
+        </div>
+        <div>
+            <input type="checkbox" id="check3">
+            <label for="check3">Label 3</label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

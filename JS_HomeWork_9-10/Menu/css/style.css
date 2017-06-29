@@ -1,0 +1,82 @@
+nav {
+    background-color:rgb(255,100,100);
+    padding:10px 0;
+}
+
+.menu,
+.submenu {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.menu__item {
+    display:inline-block;
+    position:relative;
+}
+
+nav li ul {
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:50px;
+    width:200px;
+}
+
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px;
+    margin:0;
+}
+
+.menu__link,
+.submenu__link {
+    line-height:50px;
+    padding:0 12px;
+    margin:0 12px;
+}
+
+.menu__link,
+.submenu__link {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+.menu__link:hover,
+.submenu__link:hover,
+.menu__link:focus,
+.submenu__link:focus,
+.menu__link:active,
+.submenu__link:active {
+    color:rgb(50,50,50);
+}
+
+nav .menu__item .submenu__item .submenu__link {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+
+nav .menu__item .submenu__item:last-child a {
+    border-bottom:none;
+}
+
+nav .menu__item.dropdown > a {
+    background:url('../img/arrow-down.png') right 20px no-repeat;
+}
+
+nav .menu__item .submenu__item.dropdown > a {
+    background:url('../img/arrow-right.png') right 16px no-repeat;
+}
+
+ul.submenu {
+    display:none;
+}
