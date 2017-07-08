@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: -webkit-linear-gradient(30deg, #00b9e9, #acdcf8);
+    background: -o-linear-gradient(30deg, #00b9e9, #acdcf8);
+    background: linear-gradient(60deg, #00b9e9, #acdcf8);
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 19rem;
+    padding: 1.3rem 1rem;
+    background: #e6f7fd;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*Header*/
+.login-form h1 {
+    margin: 0 0 0.9rem;
+    font: normal 20px/1 "SFUIDisplay-Medium", sans-serif;
+    color: #2ea7e0;
+    text-transform: uppercase;
+}
+/*END Header*/
+
+/*Input options*/
+.login-form input {
+    width: 100%;
+    margin: 0 0 1px;
+    padding-top: 0.85rem;
+    background: #e6f7fd;
+    -webkit-box-shadow: 0 1px 0 0 rgba(137, 207, 239, 1);
+    box-shadow: 0 1px 0 0 rgba(137, 207, 239, 1);
+    border: 0;
+    border-bottom: 1px solid #2ea7e0;
+    outline: 0;
+    font: normal 14px/1 "SFUIDisplay-Medium", sans-serif;
+    text-align: center;
+    color: #2ea7e0;
+}
+
+.login-form input::-webkit-input-placeholder {
+    color: #64d3ff;
+    font: normal 12px/1 "SFUIDisplay-Light", sans-serif;
+}
+/*END Input options*/
+
+/*Submit button*/
+.login-form button {
+    margin-top: 1.4rem;
+    padding: 1.125rem 2rem;
+    background: -webkit-linear-gradient(30deg, #fbcd3d , #fee313);
+    background: -o-linear-gradient(30deg, #fbcd3d , #fee313);
+    background: linear-gradient(60deg, #fbcd3d , #fee313);
+    border: 1px solid #34a7e0;
+    border-radius: 25px;
+    outline: 0;
+    font: normal 0.8rem/1 "SFUIDisplay-Regular", sans-serif;
+    text-transform: uppercase;
+    color: #2ea7e0;
+    cursor: pointer;
+}
+
+.login-form button:hover,.login-form button:active,.login-form button:focus {
+    background: -webkit-linear-gradient(30deg, #00b9e9, #acdcf8);
+    background: -o-linear-gradient(30deg, #00b9e9, #acdcf8);
+    background: linear-gradient(60deg, #00b9e9, #acdcf8);
+    color: #fbcd3d;
+}
+/*!END Submit button*/
+
+/*Message under the form*/
+.login-form .message {
+    margin: 0.95rem 0 0;
+    font: normal 0.7rem/1 "SFUIDisplay-Light", sans-serif;
+    color: #b3b3b3;
+}
+/*END Message under the form*/
+
+/*Link to create an account*/
+.login-form .message a {
+    color: #2ea7e0;
+    text-decoration: none;
+}
+.login-form .message a:hover {
+    text-decoration: underline;
+}
+/*END Link to create an account*/
+
+/*Options for screens bigger than 480px*/
+@media screen and (min-width: 480px) {
+    .container {
+        width: 29rem;
+    }
+    .login-form input {
+        width: 80%;
+    }
+}
+/*END Options for screens bigger than 480px*/
+
+/*Icon location*/
+.cloudOne {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/Cloud-small-left.png) 0 0 no-repeat;
+    left: 40%;
+    top: 1%;
+}
+
+.cloudTwo {
+    position: absolute;
+    width: 47px;
+    height: 31px;
+    background: url(../img/Cloud-big-right.png) 0 0 no-repeat;
+    left: 83%;
+    top: 4%;
+}
+
+.flashThree {
+    position: absolute;
+    width: 20px;
+    height: 48px;
+    background: url(../img/flash-big.png) 0 0 no-repeat;
+    left: 28%;
+    top: 9%;
+}
+
+.cloudFour {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/Cloud-small-right.png) 0 0 no-repeat;
+    left: 70%;
+    top: 10%;
+}
+
+.cloudFive {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/Cloud-small-left.png) 0 0 no-repeat;
+    left: 0;
+    top: 32%;
+}
+
+.cloudSix {
+    position: absolute;
+    width: 47px;
+    height: 31px;
+    background: url(../img/Cloud-big-right.png) 0 0 no-repeat;
+    left: 8%;
+    top: 18%;
+}
+
+.cloudSeven {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/Cloud-small-right.png) 0 0 no-repeat;
+    right: 7%;
+    top: 12%;
+}
+
+.cloudEight {
+    position: absolute;
+    width: 47px;
+    height: 31px;
+    background: url(../img/Cloud-big-left.png) 0 0 no-repeat;
+    right: 1%;
+    top: 43%;
+}
+
+.cloudNine {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/Cloud-small-right.png) 0 0 no-repeat;
+    left: 3%;
+    bottom: 30%;
+}
+
+.cloudTen {
+    position: absolute;
+    width: 47px;
+    height: 31px;
+    background: url(../img/Cloud-big-left.png) 0 0 no-repeat;
+    left: 19%;
+    bottom: 6%;
+}
+
+.cloudEleven {
+    position: absolute;
+    width: 47px;
+    height: 31px;
+    background: url(../img/Cloud-big-left.png) 0 0 no-repeat;
+    right: 8%;
+    bottom: 2%;
+}
+
+.flashTwelve {
+    position: absolute;
+    width: 20px;
+    height: 48px;
+    background: url(../img/flash-big.png) 0 0 no-repeat;
+    right: 25%;
+    bottom: 15%;
+}
+
+.flashThirteen {
+     position: absolute;
+     width: 13px;
+     height: 32px;
+     background: url(../img/flash-small.png) 0 0 no-repeat;
+     left: 15%;
+     bottom: 15%;
+}
+
+.cloudFourteen {
+    position: absolute;
+    width: 33px;
+    height: 22px;
+    background: url(../img/cloud-small-left.png) 0 0 no-repeat;
+    left: 44%;
+    bottom: 23%;
+}
+/*END Icon location*/
