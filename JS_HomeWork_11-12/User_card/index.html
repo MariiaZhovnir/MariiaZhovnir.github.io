@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script type="text/template" id="cv">
+        <div class="header">
+            <h2 class="name"><%- name %></h2>
+        </div>
+        <div class="information">
+            <div class="main">
+                <img class="photo" src="img/me.jpg" width="200" height="200" alt="Моя фотография">
+                <p class="position"><%- position %></p>
+            </div>
+        <div class="reasons">
+            <h2 class="title"><%- reasons.title %></h2>
+            <ul class="list">
+                <% _.forEach(reasons.items, function(item) { %>
+                <li class="list-item">
+                    <%- item %>
+                </li>
+                <% }); %>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h3 class="mobileTitle"><%- contacts.mobileTitle %></h3>
+            <p class="mobile"><%- contacts.mobile %></p>
+            <h3 class="linkTitle"><%- contacts.mobileTitle %></h3>
+            <p class="link"><a href="https://<%- contacts.link %>"><%- contacts.link %></a></p>
+        </div>
+        <div class="feedback">
+            <h3 class="title"><%- feedback.title %></h3>
+            <p class="text"><%- feedback.text %></p>
+        </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
