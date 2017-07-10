@@ -19,25 +19,26 @@
                 <img class="photo" src="<%- photo %>" width="200" height="200" alt="Моя фотография">
                 <p class="position"><%- position %></p>
             </div>
-        <div class="reasons">
-            <h2 class="title"><%- reasons.title %></h2>
-            <ul class="list">
-                <% _.forEach(reasons.items, function(item) { %>
-                <li class="list-item">
-                    <%- item %>
-                </li>
-                <% }); %>
-            </ul>
-        </div>
-        <div class="contacts">
-            <h3 class="mobileTitle"><%- contacts.mobileTitle %></h3>
-            <p class="mobile"><%- contacts.mobile %></p>
-            <h3 class="linkTitle"><%- contacts.mobileTitle %></h3>
-            <p class="link"><a href="https://<%- contacts.link %>"><%- contacts.link %></a></p>
-        </div>
-        <div class="feedback">
-            <h3 class="title"><%- feedback.title %></h3>
-            <p class="text"><%- feedback.text %></p>
+            <div class="reasons">
+                <h2 class="title"><%- reasons.title %></h2>
+                <ul class="list">
+                    <% _.forEach(reasons.items, function(item) { %>
+                    <li class="list-item">
+                        <%- item %>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h3 class="mobileTitle"><%- contacts.mobileTitle %></h3>
+                <p class="mobile"><%- contacts.mobile %></p>
+                <h3 class="linkTitle"><%- contacts.mobileTitle %></h3>
+                <p class="link"><a href="https://<%- contacts.link %>"><%- contacts.link %></a></p>
+            </div>
+            <div class="feedback">
+                <h3 class="title"><%- feedback.title %></h3>
+                <p class="text"><%- feedback.text %></p>
+            </div>
         </div>
     </script>
 

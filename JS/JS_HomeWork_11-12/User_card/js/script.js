@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    var menuData = {
+    var information = {
             name: 'Жовнер Мария Сергеевна',
             photo: 'img/me.jpg',
             position: 'Инженер службы балансов электроенергии',
@@ -22,17 +22,15 @@
                 text: 'Если нужно, могу свести Вам фидерный баланс'
             }
 
-            // title: 'Хочу учить фронтенд, потому что:',
-            // items: ['Хочу освоить более интересную професию', 'Есть много свободного времени', 'Платят мало']
         },
 
         parent = document.getElementById('container');
 
 
     var source = document.getElementById('cv').textContent,
-        template = _.template(source, {data: menuData});
+        template = _.template(source, {data: information});
 
-    parent.innerHTML += template(menuData);
+    parent.innerHTML += template(information);
 
 })();
 
