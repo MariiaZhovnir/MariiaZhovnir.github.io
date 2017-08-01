@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div id="container"></div>
+
+    <script type="text/template" id="test">
+        <form name="myForm" action="#" id="question-form">
+            <h1 class="title"><%- title %></h1>
+            <ol class="question-list" >
+                <% for (var i = 0, max = questions.length; i < max; i++) { %>
+                <li class="question-item"><%- questions[i].title %>
+                    <ul class="answer-list">
+                        <% for (var j = 0, answersNumber = questions[i].answers.length; j < answersNumber; j++) { %>
+                        <li class="answers-item">
+                            <input name="<%- 'question' + (i + 1) %>" type="checkbox" id="" value="">
+                            <label for="" class="answerLabel">
+                                <%= questions[i].answers[j] %>
+                            </label>
+                        </li>
+                        <% }; %>
+                    </ul>
+                </li>
+                <% }; %>
+            </ol>
+            <div class="button">
+                <button onclick="showModalWin()">Проверить мои результаты</button>
+            </div>
+        </form>
+    </script>
+
+<div style="text-align: center" id="popupWin" class="modalwin">
+    <h2> Ваш результат: </h2>
+    <div>Вопрос №1: <span id="q1"></span></div>
+    <div>Вопрос №2:<span id="q2"></span></div>
+    <div>Вопрос №3:<span id="q3"></span></div>
+    <button id="ok">OK</button>
+</div>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
