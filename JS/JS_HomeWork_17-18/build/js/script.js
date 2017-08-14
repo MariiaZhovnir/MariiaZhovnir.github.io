@@ -1,1 +1,1 @@
-console.log(10),console.log(20);
+"use strict";console.log(10),function(){console.log(5);console.log(20);console.log("qwe${a}")}();

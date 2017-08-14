@@ -7,7 +7,7 @@ var browserSync = require('browser-sync');
 var cssnano = require('gulp-cssnano');
 var del = require('del');
 var uglify = require('gulp-uglify');
-// var babel = require('gulp-babel');
+var babel = require('gulp-babel');
 var imagemin = require('gulp-imagemin');
 var imageminPngquant = require('imagemin-pngquant');
 
@@ -69,7 +69,7 @@ gulp.task('bundleCss', function() {
 gulp.task('bundleJs', function () {
     return gulp.src(path.src.js)
         .pipe(concat('script.js'))
-        // .pipe(babel({presets: ['env']}))
+        .pipe(babel({presets: ['env']}))
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.reload({stream:true}));
