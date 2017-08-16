@@ -1,0 +1,6 @@
+.inputBox, .resultBox {
+    margin: 10px;
+}
+input[type="button"] {
+    width: 150px;
+}

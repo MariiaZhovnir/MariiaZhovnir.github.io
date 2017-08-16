@@ -1,0 +1,17 @@
+h1 {
+    font: bold 2.5rem Calibri, sans-serif;
+    text-align: center;
+}
+.input {
+    width: 33%;
+    margin-left: 33%;
+}
+.result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture {
+    margin: 50px;
+
+}
